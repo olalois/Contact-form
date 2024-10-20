@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main_container">
+        <div class="sub_container">
+            <h2>Contact Us</h2>
+            <form action="" autocomplete="" class="Contact-form">
+                <div class="name">
+                    <div class="column">
+                        <label for="firstname">First Name <span>*</span></label>
+                        <input type="text" required id="first-name">
+                        <small class="error-message" id="error-message" style="color: red; display: none;"></small>
+                    </div>
+                    <div class="column">
+                        <label for="lastname">Last Name <span>*</span></label>
+                        <input type="text" name="" id="last-name" required  >
+                        <small class="error-message" id="error-message2" style="color: red; display: none;"></small>
+                    </div>                 
+                </div>
+                <div class="email">
+                    <label for="email">Email Address <span>*</span></label>
+                    <input type="email" name="email" id="Email" required >
+                    <small id="emailError"></small>
+                </div>
+                <div class="radios">
+                    <label for="querytype">Query Type <span>*</span></label>
+                    <div class="gen-quest">
+                        <div class="first_choice"><input type="radio" value="choice1" id="general_inquiry" name="radio">General Enquiry</div>
+                        <div class="second_choice"><input type="radio" value="choice2" id="support_request" name="radio">Support Request</div>
+                    </div>
+                    <small id="radio-error-message" style="color: red; display: none; margin: 0; padding: 0;" ></small>
+                </div>
+                <div class="message">
+                    <label for="message">Message <span>*</span></label>
+                    <textarea name="" id="textArea" style="max-width: 475px; min-width: 475px; min-height: 15vh; max-height: 20vh;" required></textarea>
+                    <small class="error-message" style="color: red; display: none;" id="TextAreaError"></small>
+                </div>
+                <div class="consent">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <span class="checkmark"></span>
+                       <span class="Con-text"> I consent to being contacted by them*</span>
+                      </label>
+                      <small id="checkbox-error-message" style="color: red; display: none;"></small>
+                      
+                </div>
+                <input type="submit" class="submit">
+            </form>
+        </div>
+    </div>
+    <!-- <div class="prove" style="background-color: black; color: green; height: 50vh; width: 50vw; z-index: 1; position: relative; bottom: 15rem;">this is to prove that my javascript works on this page</div> -->
+</body>
+<script src="./script.js"></script>
+</html>
