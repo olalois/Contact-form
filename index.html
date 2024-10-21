@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=task_alt" />
 </head>
 <body>
     <div class="main_container">
@@ -38,7 +39,7 @@
                 </div>
                 <div class="message">
                     <label for="message">Message <span>*</span></label>
-                    <textarea name="" id="textArea" style="max-width: 475px; min-width: 475px; min-height: 15vh; max-height: 20vh;" required></textarea>
+                    <textarea name="" id="textArea" style="max-width: 475px;  min-height: 15vh; max-height: 20vh;" required></textarea>
                     <small class="error-message" style="color: red; display: none;" id="TextAreaError"></small>
                 </div>
                 <div class="consent">
@@ -54,7 +55,17 @@
             </form>
         </div>
     </div>
-    <!-- <div class="prove" style="background-color: black; color: green; height: 50vh; width: 50vw; z-index: 1; position: relative; bottom: 15rem;">this is to prove that my javascript works on this page</div> -->
+    <div class="success">
+        <div class="success-message">
+            <div class="me-sent">
+                <span class="material-symbols-outlined" style="color: white;">
+                    task_alt
+                </span>
+                <h4>message sent!</h4>
+            </div>
+            <h6 style="margin: 0;">Thanks for completing the form, we will be in touch soon!</h6>
+        </div>
+    </div>
 </body>
 <script src="./script.js"></script>
 </html>

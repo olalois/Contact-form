@@ -8,6 +8,8 @@ let isValid = true;
     const errormessage2 = document.querySelector('#error-message2')
     const TextAreaError = document.querySelector('#TextAreaError')
     const textArea = document.querySelector('#textArea')
+    let SuccessMessage = document.querySelector('.success')
+    
     if (firstName.value.trim() === ""){
 
         event.preventDefault();
@@ -94,8 +96,19 @@ let isValid = true;
 
 
     if (isValid) {
+
+        // SuccessMessage.classList.add('visible');
+
+        SuccessMessage.style.display="flex";
+
+        setTimeout(function(){
+
+            document.querySelector('.Contact-form').reset();
+
+            window.location.reload();
+        },5000)
+        // alert("Form submitted successfully!");
         // Reset the form fields
-        document.getElementById('validationForm').reset();
     }
 })
 
